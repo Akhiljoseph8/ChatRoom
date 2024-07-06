@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://chatroom-backend-w6or.onrender.com",
+  "proxy": "https://chatroom-backend-1.onrender.com",
   "dependencies": {
     "@chakra-ui/react": "^2.4.9",
     "@emotion/react": "^11.10.5",
