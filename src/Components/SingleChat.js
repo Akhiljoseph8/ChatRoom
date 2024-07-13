@@ -62,7 +62,7 @@ const ImageBox = styled.input.attrs({ type: "file", accept: "image/*" })`
   }
 `;
 
-const ENDPOINT = "https://chatroom-backend-1.onrender.com";
+const ENDPOINT = "https://chatroom-backend-w6or.onrender.com";
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
