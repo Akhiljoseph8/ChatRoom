@@ -308,7 +308,7 @@ const Login = ({ handleSignup }) => {
               "Content-Type": "application/json",
             },
           };
-
+          console.log(email)
           const { data } = await axios.post(
             "/api/user/login",
             {
