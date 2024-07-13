@@ -309,7 +309,7 @@ const Login = ({ handleSignup }) => {
             },
           };
           console.log(email)
-          const { data } = await axios.put(
+          const { data } = await axios.get(
             "/api/user/login",
             {
               email,
