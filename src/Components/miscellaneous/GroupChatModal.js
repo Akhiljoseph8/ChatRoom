@@ -162,7 +162,7 @@ const GroupChatModal = ({ children }) => {
             </FormControl>
             {console.log(selectedUsers)}
             <Box display="flex" w="100%" flexWrap="wrap">
-              {selectedUsers.map((u) => (
+              {selectedUsers.length>0 && selectedUsers.map((u) => (
                 <Box key={u._id}>
                   <UserBatchItem
                     user={u}
