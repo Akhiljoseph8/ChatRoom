@@ -103,7 +103,7 @@ const MyChats = ({ fetchAgain }) => {
         >
           {!chatLoader ? (
             <StackBox>
-              {chats.map((chat) => (
+               {chats.length>0 && chats.map((chat) => (
                 <Box key={chat._id}>
                   <Box
                     display="flex"
