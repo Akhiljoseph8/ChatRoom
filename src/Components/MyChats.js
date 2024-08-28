@@ -27,7 +27,7 @@ const MyChats = ({ fetchAgain }) => {
   const [chatLoader, setChatLoader] = useState(true);
   const [loggedUser, setLoggedUser] = useState();
   const { selectedChat, setSelectedChat, chats, setChats, user } = ChatState();
-const base="https://chatroom-backend-w6or.onrender.com"
+
   const fetchChats = async () => {
     setChatLoader(true);
     try {
@@ -36,7 +36,7 @@ const base="https://chatroom-backend-w6or.onrender.com"
           Authorization: `Bearer ${user.token}`,
         },
       };
-      const { data } = await axios.get(`${base}/api/chat`, config);
+      const { data } = await axios.get("/api/chat", config);
 
       setChats(data);
       setChatLoader(false);
