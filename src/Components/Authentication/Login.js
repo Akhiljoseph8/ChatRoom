@@ -8,7 +8,7 @@ import Toast from "../Toast";
 import { ReactComponent as Loader } from "../../Images/buttonLoader.svg";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-const base="https://chatroom-backend-w6or.onrender.com"
+
 const LoginForm = styled.form`
   width: 100%;
   height: 100%;
@@ -310,7 +310,7 @@ const Login = ({ handleSignup }) => {
           };
           console.log(email)
           const { data } = await axios.get(
-            `${base}/api/user/login`,
+            "/api/user/login",
             {
               email,
               password,
